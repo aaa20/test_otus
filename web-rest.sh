@@ -4,12 +4,12 @@
 sudo apt update
 sudo mkdir -p /var/www/html
 
-sudo cp -r /web_bak/html /var/www/
+sudo cp -rv /web_bak/html /var/www/
 sudo cp -rv /web_bak/etc/php /etc/
 sudo cp -rv /web_bak/etc/nginx /etc/
 
 sudo apt -y install nginx
-sudo systemctl enable nginx
+sudo systemctl enable nginx.service
 sudo systemctl start nginx.service
 
 
